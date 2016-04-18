@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Website Calculator</title>
+        <link rel="shortcut icon" href="docs/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="docs/images/apple-touch-icon.png">
+        <link id="data-uikit-theme" rel="stylesheet" href="docs/css/uikit.docs.min.css">
+        <link rel="stylesheet" href="docs/css/docs.css">
+        <link rel="stylesheet" href="vendor/highlight/highlight.css">
+        <script src="vendor/jquery.js"></script>
+        <script src="docs/js/uikit.min.js"></script>
+        <script src="vendor/highlight/highlight.js"></script>
+        <script src="docs/js/docs.js"></script>
+        <script src="src/js/core/switcher.js"></script>
+        <script src="src/js/script.js"></script>
+    </head>
+
+    <body>
+
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+        <nav class="uk-navbar uk-margin-large-bottom">
+            <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
+            <ul class="uk-navbar-nav uk-hidden-small">
+                <li>
+                    <a href="layouts_frontpage.html">Frontpage</a>
+                </li>
+                <li class="uk-active">
+                    <a href="layouts_portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="layouts_blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="layouts_documentation.html">Documentation</a>
+                </li>
+                <li>
+                    <a href="layouts_contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="layouts_login.html">Login</a>
+                </li>
+            </ul>
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
+        </nav>
+
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <h1 class="uk-heading-large">Website Calculator</h1>
+                <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+        <div class="uk-grid">
+
+            <div class="uk-width-7-10">
+
+
+                    <ul class="uk-tab" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
+                        <li class="uk-active"><a href="#">Type of Service</a></li> <!--0-->
+                        <li><a href="#">Local - 1</a></li>  <!--1-->
+                        <li><a href="#">Local - 2</a></li>  <!--2-->
+                        <li><a href="#">National - 1</a></li>  <!--3-->
+                        <li><a href="#">New Website?</a></li>  <!--4-->
+                        <li><a href="#">Website-1</a></li>  <!--5-->
+                    </ul>
+
+                    <ul id="tab-content-a-fade" class="uk-switcher uk-margin">
+                        <li> <!--0-->
+                            What type of service are you interested in?<br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="1">Local</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="3">National/Ecommerce</a>
+                        </li>
+
+                        <li> <!--1-->
+                            How many local locations do you have?
+                            <select id="loc_count">
+                                <option value="0">--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+                            <br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="2">Next</a>
+                        </li>
+                        <li> <!--2-->
+                            Would you like expanded location services and advertisting?
+                            <select id="expand_web">
+                                <option value="0">--</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select><br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="1">Back</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="4">Next</a>
+                        </li>
+                        <li> <!--3-->
+                            How many products do you have? <input type="text" id="prod_count"><br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="4">Next</a>
+                        </li>
+                        <li> <!--4-->
+                            Are you interested in a new website?<br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="5">Yes</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="6">No</a>
+                        </li>
+                        <li> <!--5-->
+                            Are you interested in a templated website with standard functions? (See template options below). Our standard websites include up to 20 pages<br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="5">Yes</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="6">No</a>
+                        </li>
+
+                    </ul>
+
+
+            </div>
+
+            <div class="uk-width-3-10">
+                <div id="budget">
+                    <h3>What is your budget?</h3>
+                    <form id="budget_form">
+                        <input type="text" id="budget_value">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <hr>
+                <div id="estimate">
+                    <h3>Your estimate</h3>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+</html>
