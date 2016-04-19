@@ -1,3 +1,15 @@
 .uk-width-7-10{
     text-align: center;
+    /*border: 1px solid;*/
+    /*height: 500px;*/
+
+}
+#tab-content-a-fade li{
+    /*margin-top: 100px;*/
+}
+.hidden{
+    display: none;
+}
+.uk-button{
+    margin-top: 10px;
 }

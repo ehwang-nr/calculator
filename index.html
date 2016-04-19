@@ -62,7 +62,7 @@
 
                     <ul class="uk-tab" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
                         <li class="uk-active"><a href="#">Type of Service</a></li> <!--0-->
-                        <li><a href="#">Local - 1</a></li>  <!--1-->
+                        <li><a href="#">Website</a></li>  <!--1-->
                         <li><a href="#">Local - 2</a></li>  <!--2-->
                         <li><a href="#">National - 1</a></li>  <!--3-->
                         <li><a href="#">New Website?</a></li>  <!--4-->
@@ -72,31 +72,69 @@
                     <ul id="tab-content-a-fade" class="uk-switcher uk-margin">
                         <li> <!--0-->
                             What type of service are you interested in?<br>
-                            <a class="uk-button" href="#" data-uk-switcher-item="1">Local</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="3">National/Ecommerce</a>
-                        </li>
-
-                        <li> <!--1-->
-                            How many local locations do you have?
+                            <select id="service_type">
+                                <option value="0">--</option>
+                                <option value="local">Local</option>
+                                <option value="national">National</option>
+                            </select>
+                            <p class="hidden" id="national-1">How many products do you have?
+                                <input type="text" id="prod_count">
+                            </p>
+                            <p class="hidden" id="local-1">How many local locations do you have?
                             <select id="loc_count">
                                 <option value="0">--</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
-
-                            </select>
-                            <br>
-                            <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="2">Next</a>
-                        </li>
-                        <li> <!--2-->
-                            Would you like expanded location services and advertisting?
+                            </select></p>
+                            <p class="hidden" id="local-2"> Would you like expanded location services and advertisting?
                             <select id="expand_web">
                                 <option value="0">--</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
-                            </select><br>
+                            </select></p>
+                            <br>
+                            <a class="uk-button" href="#" data-uk-switcher-item="1">Next</a>
+
+                        </li>
+
+                        <li> <!--1-->
+                            Are you interested in a new website?
+                            <br>
+                            <select id="new_web">
+                                <option value="0">--</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                            <br>
+                            <p class="hidden" id="web-1">Are you interested in a templated website with standard function?
+                                Our standard websites include up to 20 pages.
+                                <select id="template">
+                                    <option value="0">--</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </p>
+                            <p class="hidden" id="web-2">Are you interested in a custom build website with advanced features?
+                                <select id="custom">
+                                    <option value="0">--</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </p>
+                            <p class="hidden" id="web-3">Are you a restaurant?
+                                <select id="restaurant">
+                                    <option value="0">--</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </p>
+                            <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
+                            <a class="uk-button" href="#" data-uk-switcher-item="2">Next</a>
+                        </li>
+                        <li> <!--2-->
+
                             <a class="uk-button" href="#" data-uk-switcher-item="1">Back</a>
                             <a class="uk-button" href="#" data-uk-switcher-item="4">Next</a>
                         </li>
