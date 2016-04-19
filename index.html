@@ -8,12 +8,11 @@
         <link rel="shortcut icon" href="docs/images/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="docs/images/apple-touch-icon.png">
         <link id="data-uikit-theme" rel="stylesheet" href="docs/css/uikit.docs.min.css">
-        <link rel="stylesheet" href="docs/css/docs.css">
         <link rel="stylesheet" href="vendor/highlight/highlight.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <script src="vendor/jquery.js"></script>
         <script src="docs/js/uikit.min.js"></script>
         <script src="vendor/highlight/highlight.js"></script>
-        <script src="docs/js/docs.js"></script>
         <script src="src/js/core/switcher.js"></script>
         <script src="src/js/script.js"></script>
     </head>
@@ -60,7 +59,6 @@
         <div class="uk-grid">
 
             <div class="uk-width-7-10">
-
 
                     <ul class="uk-tab" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
                         <li class="uk-active"><a href="#">Type of Service</a></li> <!--0-->
@@ -120,21 +118,21 @@
 
                     </ul>
 
-
             </div>
 
             <div class="uk-width-3-10">
-                <div id="budget">
+                <div>
                     <h3>What is your budget?</h3>
                     <form id="budget_form">
                         <input type="text" id="budget_value">
                         <input type="submit" value="Submit">
                     </form>
+                    <h3 id="budget"></h3>
                 </div>
                 <hr>
-                <div id="estimate">
+                <div>
                     <h3>Your estimate</h3>
-
+                    <h3 id="estimate"></h3>
 
                 </div>
 
