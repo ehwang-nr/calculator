@@ -1,11 +1,19 @@
-.uk-width-7-10{
-    text-align: center;
-    /*border: 1px solid;*/
-    /*height: 500px;*/
-
+*{
+    font: 'Open Sans' !important;
 }
-#tab-content-a-fade li{
-    /*margin-top: 100px;*/
+h1{
+    color: #0074cc;
+}
+.uk-width-6-10{
+    text-align: center;
+    padding:20px;
+}
+.uk-width-3-10{
+    text-align: center;
+    background-color: #ebf7fd;
+    border: 1px solid #e5e5e5;
+    padding:20px;
+    border-radius: 4px;
 }
 .hidden{
     display: none;

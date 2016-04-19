@@ -21,31 +21,6 @@
 
     <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-        <nav class="uk-navbar uk-margin-large-bottom">
-            <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
-            <ul class="uk-navbar-nav uk-hidden-small">
-                <li>
-                    <a href="layouts_frontpage.html">Frontpage</a>
-                </li>
-                <li class="uk-active">
-                    <a href="layouts_portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="layouts_blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="layouts_documentation.html">Documentation</a>
-                </li>
-                <li>
-                    <a href="layouts_contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="layouts_login.html">Login</a>
-                </li>
-            </ul>
-            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
-        </nav>
 
         <div class="uk-grid" data-uk-grid-margin>
             <div class="uk-width-1-1">
@@ -53,14 +28,13 @@
                 <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
             </div>
         </div>
-    </div>
 
-    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-        <div class="uk-grid">
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+            <div class="uk-grid">
 
-            <div class="uk-width-7-10">
+                <div class="uk-width-6-10">
 
-                    <ul class="uk-tab" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
+                    <ul class="uk-subnav uk-subnav-pill" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
                         <li class="uk-active"><a href="#">Type of Service</a></li> <!--0-->
                         <li><a href="#">Website</a></li>  <!--1-->
                         <li><a href="#">Local - 2</a></li>  <!--2-->
@@ -156,27 +130,28 @@
 
                     </ul>
 
-            </div>
-
-            <div class="uk-width-3-10">
-                <div>
-                    <h3>What is your budget?</h3>
-                    <form id="budget_form">
-                        <input type="text" id="budget_value">
-                        <input type="submit" value="Submit">
-                    </form>
-                    <h3 id="budget"></h3>
-                </div>
-                <hr>
-                <div>
-                    <h3>Your estimate</h3>
-                    <h3 id="estimate"></h3>
-
                 </div>
 
+                <div class="uk-width-3-10">
+                    <div>
+                        <h3>What is your budget?</h3>
+                        <form id="budget_form">
+                            <input type="text" id="budget_value">
+                            <input type="submit" value="Submit">
+                        </form>
+                        <h3 id="budget"></h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Your estimate</h3>
+                        <h3 id="estimate"></h3>
+                        <div id="warning"></div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
-
     </div>
 
     </body>
