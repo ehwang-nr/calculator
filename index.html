@@ -9,6 +9,8 @@
         <link rel="apple-touch-icon-precomposed" href="src/images/apple-touch-icon.png">
         <link id="data-uikit-theme" rel="stylesheet" href="src/css/uikit.min.css">
         <link rel="stylesheet" href="vendor/highlight/highlight.css">
+        <link rel="stylesheet" href="src/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="src/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
         <script src="vendor/jquery.js"></script>
@@ -33,15 +35,16 @@
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
             <div class="uk-grid">
 
-                <div class="uk-width-6-10">
+                <div class="uk-width-6-10" id="questions">
 
-                    <ul class="uk-subnav uk-subnav-pill" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
-                        <li class="uk-active"><a href="#">Type of Service</a></li> <!--0-->
-                        <li><a href="#">Website</a></li>  <!--1-->
-                        <li><a href="#">SOW/Design Builder</a></li>  <!--2-->
-                        <li><a href="#">Online Scheduling</a></li>  <!--3-->
+                    <ul class="uk-subnav uk-subnav-tab" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
+                        <li class="uk-active uk-width-1-5"><a href="#"><i class="uk-icon-wrench fa-2x"></i><br>Type of Service</a></li> <!--0-->
+                        <li class="uk-width-1-5"><a href="#"><i class="uk-icon-desktop fa-2x"></i><br>Website</a></li>  <!--1-->
+                        <li class="uk-width-1-5"><a href="#"><i class="uk-icon-cogs fa-2x"></i><br>SOW/Design Builder</a></li>  <!--2-->
+                        <li class="uk-width-1-5"><a href="#"><i class="uk-icon-calendar-check-o fa-2x"></i><br>Online Scheduling</a></li>  <!--3-->
+                        <li class="uk-width-1-5"><a href="#"><i class="uk-icon-check fa-2x"></i><br>Done!</a></li>  <!--3-->
                     </ul>
-
+                    <hr class="uk-grid-divider">
                     <ul id="tab-content-a-fade" class="uk-switcher uk-margin">
                         <li> <!--0-->
                             What type of service are you interested in?<br>
@@ -61,14 +64,14 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select></p>
-                            <p class="hidden" id="local-2"> Would you like expanded location services and advertisting?
+                            <p class="hidden" id="local-2"> Would you like expanded location services and advertising?
                             <select id="expand_web">
                                 <option value="0">--</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select></p>
                             <br>
-                            <a class="uk-button uk-width-1-1" href="#" data-uk-switcher-item="1">Next</a>
+                            <a class="uk-button uk-width-1-1" href="#" data-uk-switcher-item="1">NEXT</a>
 
                         </li>
 
@@ -103,29 +106,29 @@
                                     <option value="no">No</option>
                                 </select>
                             </p>
-                            <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="2">Next</a>
+                            <a class="uk-button uk-width-3-10" href="#" data-uk-switcher-item="0">BACK</a>
+                            <a class="uk-button uk-width-6-10" href="#" data-uk-switcher-item="2">NEXT</a>
                         </li>
                         <li> <!--2-->
 
-                            <a class="uk-button" href="#" data-uk-switcher-item="1">Back</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="4">Next</a>
+                            <a class="uk-button uk-width-3-10" href="#" data-uk-switcher-item="1">BACK</a>
+                            <a class="uk-button uk-width-6-10" href="#" data-uk-switcher-item="4">NEXT</a>
                         </li>
                         <li> <!--3-->
                             How many products do you have? <input type="text" id="prod_count"><br>
-                            <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="4">Next</a>
+                            <a class="uk-button uk-width-3-10" href="#" data-uk-switcher-item="0">BACK</a>
+                            <a class="uk-button uk-width-6-10" href="#" data-uk-switcher-item="4">NEXT</a>
                         </li>
 
                     </ul>
 
                 </div>
 
-                <div class="uk-width-3-10">
+                <div class="uk-width-3-10 uk-panel uk-panel-box uk-panel-box-primary" id="costs">
                     <div>
                         <h3>What is your budget?</h3>
                         <form id="budget_form">
-                            <input type="text" id="budget_value"><br>
+                            <input type="text" id="budget_value" class="uk-form-small uk-form-width-small"><br>
                             <input type="submit" class="uk-button" value="Submit">
                         </form>
                         <h3 id="budget"></h3>
