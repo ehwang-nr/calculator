@@ -1,8 +1,12 @@
 *{
-    font: 'Open Sans' !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 h1{
     color: #0074cc;
+    font-weight: 700;
+}
+h3{
+    font-weight: 600;
 }
 .uk-width-6-10{
     text-align: center;
@@ -20,4 +24,5 @@ h1{
 }
 .uk-button{
     margin-top: 10px;
+    border-radius: 0px !important;
 }

@@ -5,13 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Website Calculator</title>
-        <link rel="shortcut icon" href="docs/images/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="docs/images/apple-touch-icon.png">
-        <link id="data-uikit-theme" rel="stylesheet" href="docs/css/uikit.docs.min.css">
+        <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="src/images/apple-touch-icon.png">
+        <link id="data-uikit-theme" rel="stylesheet" href="src/css/uikit.min.css">
         <link rel="stylesheet" href="vendor/highlight/highlight.css">
         <link rel="stylesheet" href="src/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
         <script src="vendor/jquery.js"></script>
-        <script src="docs/js/uikit.min.js"></script>
+        <script src="src/js/uikit.min.js"></script>
         <script src="vendor/highlight/highlight.js"></script>
         <script src="src/js/core/switcher.js"></script>
         <script src="src/js/script.js"></script>
@@ -37,10 +38,8 @@
                     <ul class="uk-subnav uk-subnav-pill" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
                         <li class="uk-active"><a href="#">Type of Service</a></li> <!--0-->
                         <li><a href="#">Website</a></li>  <!--1-->
-                        <li><a href="#">Local - 2</a></li>  <!--2-->
-                        <li><a href="#">National - 1</a></li>  <!--3-->
-                        <li><a href="#">New Website?</a></li>  <!--4-->
-                        <li><a href="#">Website-1</a></li>  <!--5-->
+                        <li><a href="#">SOW/Design Builder</a></li>  <!--2-->
+                        <li><a href="#">Online Scheduling</a></li>  <!--3-->
                     </ul>
 
                     <ul id="tab-content-a-fade" class="uk-switcher uk-margin">
@@ -69,7 +68,7 @@
                                 <option value="no">No</option>
                             </select></p>
                             <br>
-                            <a class="uk-button" href="#" data-uk-switcher-item="1">Next</a>
+                            <a class="uk-button uk-width-1-1" href="#" data-uk-switcher-item="1">Next</a>
 
                         </li>
 
@@ -117,16 +116,6 @@
                             <a class="uk-button" href="#" data-uk-switcher-item="0">Back</a>
                             <a class="uk-button" href="#" data-uk-switcher-item="4">Next</a>
                         </li>
-                        <li> <!--4-->
-                            Are you interested in a new website?<br>
-                            <a class="uk-button" href="#" data-uk-switcher-item="5">Yes</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="6">No</a>
-                        </li>
-                        <li> <!--5-->
-                            Are you interested in a templated website with standard functions? (See template options below). Our standard websites include up to 20 pages<br>
-                            <a class="uk-button" href="#" data-uk-switcher-item="5">Yes</a>
-                            <a class="uk-button" href="#" data-uk-switcher-item="6">No</a>
-                        </li>
 
                     </ul>
 
@@ -136,8 +125,8 @@
                     <div>
                         <h3>What is your budget?</h3>
                         <form id="budget_form">
-                            <input type="text" id="budget_value">
-                            <input type="submit" value="Submit">
+                            <input type="text" id="budget_value"><br>
+                            <input type="submit" class="uk-button" value="Submit">
                         </form>
                         <h3 id="budget"></h3>
                     </div>
