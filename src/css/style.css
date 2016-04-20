@@ -15,6 +15,10 @@ h3{
 #questions{
     text-align: center;
     padding: 20px;
+    border: 1px solid lightgrey;
+    margin-right: 15px;
+    box-shadow: 3px 3px 3px lightgrey;
+
 }
 #tab-content-a-fade li{
     padding: 30px;
@@ -22,7 +26,8 @@ h3{
 
 .uk-width-3-10{
     text-align: center;
-
+    height: 360px;
+    box-shadow: 3px 3px 3px lightgrey;
 }
 .hidden{
     display: none;
