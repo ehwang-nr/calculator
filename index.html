@@ -24,7 +24,6 @@
 
     <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-
         <div class="uk-grid" data-uk-grid-margin>
             <div class="uk-width-1-1">
                 <h1 class="uk-heading-large">Website Calculator</h1>
@@ -34,7 +33,6 @@
 
         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
             <div class="uk-grid">
-
                 <div class="uk-width-6-10" id="questions">
 
                     <ul class="uk-subnav uk-subnav-tab" data-uk-tab="{connect:'#tab-content-a-fade', animation: 'fade'}">
@@ -44,19 +42,22 @@
                         <li class="uk-width-1-5"><a href="#"><i class="uk-icon-calendar-check-o fa-2x"></i><br>Online Scheduling</a></li>  <!--3-->
                         <li class="uk-width-1-5"><a href="#"><i class="uk-icon-check fa-2x"></i><br>Done!</a></li>  <!--4-->
                     </ul>
+
                     <hr class="uk-grid-divider">
+
                     <ul id="tab-content-a-fade" class="uk-switcher uk-margin">
                         <li> <!--0-->
-                            What type of service are you interested in?<br>
+                            <p>What type of service are you interested in? <a href="#services" data-uk-modal><i class="uk-icon-info-circle" data-uk-tooltip title="Click to learn more"></i></a><br>
                             <select id="service_type">
                                 <option value="0">--</option>
                                 <option value="local">Local</option>
                                 <option value="national">National</option>
                             </select>
-                            <p class="hidden" id="national-1">How many products do you have?
+                            </p>
+                            <p class="hidden" id="national-1">How many products do you have?<br>
                                 <input type="text" id="prod_count">
                             </p>
-                            <p class="hidden" id="local-1">How many local locations do you have?
+                            <p class="hidden" id="local-1">How many local locations do you have?<br>
                             <select id="loc_count">
                                 <option value="0">--</option>
                                 <option value="1">1</option>
@@ -64,7 +65,7 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select></p>
-                            <p class="hidden" id="local-2"> Would you like expanded location services and advertising?
+                            <p class="hidden" id="local-2"> Would you like expanded location services and advertising? <a href="#expand_loc" data-uk-modal><i class="uk-icon-info-circle" data-uk-tooltip title="Click to see our expanded services"></i></a><br>
                             <select id="expand_web">
                                 <option value="0">--</option>
                                 <option value="yes">Yes</option>
@@ -72,7 +73,6 @@
                             </select></p>
                             <br>
                             <a class="uk-button uk-width-1-1" href="#" data-uk-switcher-item="1">NEXT <i class="uk-icon-angle-double-right"></i></a>
-
                         </li>
 
                         <li> <!--1-->
@@ -84,22 +84,22 @@
                                 <option value="no">No</option>
                             </select>
                             <br>
-                            <p class="hidden" id="web-1">Are you interested in a templated website with standard function?
-                                Our standard websites include up to 20 pages.
+                            <p class="hidden" id="web-1">Are you interested in a templated website with standard features?
+                                Our standard websites include up to 20 pages.<br>
                                 <select id="template">
                                     <option value="0">--</option>
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>
                             </p>
-                            <p class="hidden" id="web-2">Are you interested in a custom build website with advanced features?
+                            <p class="hidden" id="web-2">Are you interested in a custom build website with advanced features?<br>
                                 <select id="custom">
                                     <option value="0">--</option>
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>
                             </p>
-                            <p class="hidden" id="web-3">Are you a restaurant?
+                            <p class="hidden" id="web-3">Are you a restaurant?<br>
                                 <select id="restaurant">
                                     <option value="0">--</option>
                                     <option value="yes">Yes</option>
@@ -109,20 +109,43 @@
                             <a class="uk-button uk-width-2-10" href="#" data-uk-switcher-item="0"><i class="uk-icon-angle-double-left"></i> BACK</a>
                             <a class="uk-button uk-width-7-10" href="#" data-uk-switcher-item="2">NEXT <i class="uk-icon-angle-double-right"></i></a>
                         </li>
-                        <li> <!--2-->
 
+                        <li> <!--2-->
+                            <p>Would you like a mockup of our impression of your site?<br>
+                                <select id="mockup">
+                                    <option value="0">--</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </p>
                             <a class="uk-button uk-width-2-10" href="#" data-uk-switcher-item="1"><i class="uk-icon-angle-double-left"></i> BACK</a>
                             <a class="uk-button uk-width-7-10" href="#" data-uk-switcher-item="4">NEXT <i class="uk-icon-angle-double-right"></i></a>
                         </li>
+
                         <li> <!--3-->
-                            How many products do you have? <input type="text" id="prod_count"><br>
+                            <p>Does your site require online scheduling?<br>
+                                <select id="mockup">
+                                    <option value="0">--</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </p>
                             <a class="uk-button uk-width-2-10" href="#" data-uk-switcher-item="0"><i class="uk-icon-angle-double-left"></i> BACK</a>
                             <a class="uk-button uk-width-7-10" href="#" data-uk-switcher-item="4">NEXT <i class="uk-icon-angle-double-right"></i></a>
                         </li>
+
                         <li> <!--4-->
-                            How many products do you have? <input type="text" id="prod_count"><br>
-                            <a class="uk-button uk-width-2-10" href="#" data-uk-switcher-item="0"><i class="uk-icon-angle-double-left"></i> BACK</a>
-                            <a class="uk-button uk-width-7-10" href="#" data-uk-switcher-item="4">NEXT <i class="uk-icon-angle-double-right"></i></a>
+                            <div class="uk-panel uk-panel-box" id="recs">
+                                <h1 class="uk-panel-title">Our Recommendations</h1>
+                                    <h3><i class="uk-icon-check-square-o"></i> SEO</h3>
+                                    <h3><i class="uk-icon-check-square-o"></i> Local</h3>
+                                    <h3><i class="uk-icon-check-square-o"></i> PPC</h3>
+                                    <h4>Customer Budget + 10% = </h4>
+                                    <h4>Sales + 5% Conversion Rate = </h4>
+                                <br>
+                                <button class="uk-button uk-button-primary uk-button-large">Start Your Project Today!</button>
+                            </div>
+
                         </li>
 
                     </ul>
@@ -131,22 +154,42 @@
 
                 <div class="uk-width-3-10 uk-panel uk-panel-box uk-panel-box-primary" id="costs">
                     <div>
-                        <h3>What is your budget?</h3>
+                        <h3 class="panel-title">What is Your Budget?</h3>
                         <form id="budget_form">
                             <input type="text" id="budget_value" class="uk-form-small uk-form-width-small"><br>
-                            <input type="submit" class="uk-button" value="Submit">
+                            <input type="submit" id="submit" class="uk-button" value="Submit">
                         </form>
-                        <h3 id="budget"></h3>
+                        <h3 class="panel-display" id="budget"></h3>
                     </div>
                     <hr>
                     <div>
-                        <h3>Your estimate</h3>
-                        <h3 id="estimate"></h3>
+                        <h3 class="panel-title">Your Estimate</h3>
+                        <h3 class="panel-display" id="estimate"></h3>
                         <div id="warning"></div>
                     </div>
 
                 </div>
             </div>
+
+        </div>
+    </div>
+
+    <!-- modals -->
+    <div id="services" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <h3>Local Services:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.  </p>
+            <h3>National/Ecommerce Services:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.  </p>
+        </div>
+    </div>
+
+    <div id="expand_loc" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <h3>Expanded Local Services:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.  </p>
 
         </div>
     </div>

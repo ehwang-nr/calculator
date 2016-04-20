@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     function compare(a,b){
 
-        if(a < b){
+        if((a < b) && (a != 0)){
             $('#warning').html('<div class="uk-alert uk-alert-danger" id="over"> This is over your budget!<button class="uk-alert-close uk-close" id="close"></button></div>');
             $('#close').click(function(){
                 $('#over').fadeOut();
@@ -29,13 +29,18 @@ $(document).ready(function(){
 
     $('#budget_form').submit(function(){
 
-        budget = input.val();
-        $('#budget').html("$" + budget + ".00");
+        if(input.val() && (input.val() != 0)) {
+            budget = input.val();
 
-        compare(budget, estimate);
+            $('#budget').html("$" + budget + ".00");
 
-        input.val(" ");
-        return false;
+            compare(budget, estimate);
+
+            input.val(" ");
+            return false;
+        }else{
+            alert("Please enter a valid number");
+        }
 
     });
 
@@ -92,6 +97,7 @@ $(document).ready(function(){
             template = 5000;
             calcEstimate();
             $('#web-3').fadeIn('slow');
+            $('#web-2').fadeOut('slow');
 
         } else if ($(this).val() == "no") {
             template = 0;
@@ -111,7 +117,7 @@ $(document).ready(function(){
         } else if ($(this).val() == "no") {
             template = 5000;
             calcEstimate();
-            $('#web-2').fadeIn('slow');
+
         }
     })
 

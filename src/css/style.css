@@ -9,9 +9,17 @@ h1{
     font-weight: 700;
 }
 h3{
-    font-weight: 600;
+    font-weight: 700;
 }
-
+.panel-title{
+    color: #2d7091;
+}
+.panel-display{
+    color: #444444;
+}
+#submit{
+    margin-top: 10px !important;
+}
 #questions{
     text-align: center;
     padding: 20px;
@@ -32,8 +40,24 @@ h3{
 .hidden{
     display: none;
 }
+.hidden p{
+    padding-top: 10px;
+}
 .uk-button{
     margin-top: 50px;
     display: inline-block !important;
     vertical-align: bottom;
 }
+#recs{
+    border-radius: 8px;
+}
+#recs h1{
+    font-weight: 700;
+    font-size: 2em;
+}
+#recs h3{
+    text-align: left;
+    margin-left: 20px;
+    display: inline-block;
+}
+
